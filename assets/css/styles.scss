@@ -1,8 +1,14 @@
 ---
 ---
 
+$color-font: #272838;
+$color-blue: #7FB7BE;
+$color-light-gray: #D8D8D8;
+$color-white: #F9F8F8;
+$color-purple: #7E7F9A;
+
 body {
-  background-color: gray;
+  background-color: $color-light-gray;
   margin: 0;
   font-family: 'Droid Sans', arial, serif;
 }
@@ -16,19 +22,43 @@ nav {
 
   .logo {
     position: absolute;
-    left: 15px;
+    left: 50px;
     top: 15px;
+
     h1 {
       margin: 0 0 0 15px;
       float: right;
       line-height: 50px;
     }
-  }
-}
 
-.site-wrapper {
-  width: 800px;
-  margin: auto;
+    .profile-img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  ul.menu {
+    list-style: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    li {
+      display: inline;
+      list-style: none;
+      margin-right: 20px;
+    }
+
+    a{
+      text-decoration: none;
+      color: $color-font;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
 }
 
 .iblock {
@@ -39,30 +69,13 @@ nav {
   text-align: center;
 }
 
-.profile-img {
-  border-radius: 50%;
-  width:50px;
-  height:50px;
+.text-wrapper {
+  width: 800px;
+  margin: auto;
 }
 
-
-ul.menu {
-  list-style: none;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  li {
-    display: inline;
-    list-style: none;
-    margin-right: 20px;
-  }
-}
-
-a{
-  text-decoration: none;
-  color: blue;
-  cursor: pointer;
-  &:hover {
-    color: black;
-  }
+.hero {
+  background-color: $color-blue;
+  width: 100%;
+  padding: 50px;
 }
