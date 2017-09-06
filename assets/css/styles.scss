@@ -12,7 +12,7 @@ body {
   background-color: $color-light-gray;
   margin: 0;
   font-family: 'Droid Sans', arial, serif;
-  line-height: 24px;
+  line-height: 32px;
   font-size: 18px;
 }
 
@@ -24,6 +24,7 @@ nav {
   position: relative;
   right: 0;
   left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   .logo {
     position: absolute;
@@ -104,12 +105,14 @@ p {
   }
 }
 
+
+/************ Home Page ************/
+
 .hero {
   background-color: $color-blue;
   box-sizing: border-box;
   width: 100%;
   padding: 150px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   h1 {
     font-size: 46px;
@@ -121,13 +124,48 @@ p {
   }
 }
 
+.box-wrapper {
+  text-align: center;
+  padding: 50px 0 100px 0;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .box {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 250px;
+    width: 350px;
+    background-color: $color-white;
+    margin-right: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid $color-purple;
+    vertical-align: top;
+    &:last-child {
+      margin-right: 0;
+    }
+
+  a{
+    text-decoration: none;
+    p{
+      color: $color-font;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
 .clinical {
-  background-color: $color-white;
+  background-color: $color-purple;
 
   .intro {
     padding-top: 100px;
     padding-bottom: 100px;
     padding: 100px;
+    color: $color-white;
   }
 
   .row {

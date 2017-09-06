@@ -2,7 +2,7 @@ body {
   background-color: #D8D8D8;
   margin: 0;
   font-family: 'Droid Sans', arial, serif;
-  line-height: 24px;
+  line-height: 32px;
   font-size: 18px; }
 
 nav {
@@ -11,7 +11,8 @@ nav {
   height: 80px;
   position: relative;
   right: 0;
-  left: 0; }
+  left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   nav .logo {
     position: absolute;
     left: 50px;
@@ -67,24 +68,49 @@ p {
   .row .half {
     width: 50%; }
 
+/************ Home Page ************/
 .hero {
   background-color: #7FB7BE;
   box-sizing: border-box;
   width: 100%;
-  padding: 150px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  padding: 150px; }
   .hero h1 {
     font-size: 46px; }
   .hero h3 {
     font-weight: lighter;
     color: #404040; }
 
+.box-wrapper {
+  text-align: center;
+  padding: 50px 0 100px 0; }
+  .box-wrapper h2 {
+    margin-bottom: 50px; }
+  .box-wrapper .box {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 250px;
+    width: 350px;
+    background-color: #F9F8F8;
+    margin-right: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #7E7F9A;
+    vertical-align: top; }
+    .box-wrapper .box:last-child {
+      margin-right: 0; }
+  .box-wrapper a {
+    text-decoration: none; }
+    .box-wrapper a p {
+      color: #272838; }
+      .box-wrapper a p:hover {
+        font-weight: bold; }
+
 .clinical {
-  background-color: #F9F8F8; }
+  background-color: #7E7F9A; }
   .clinical .intro {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding: 100px; }
+    padding: 100px;
+    color: #F9F8F8; }
   .clinical .row {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .clinical .description {
