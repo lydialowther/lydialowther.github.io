@@ -6,50 +6,59 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <img class="profile-img" src="/assets/images/lydia.png" srcset="/assets/images/lydia_2x.png 2x" width="50px" height="50px">
-        <h1> Lydia Lowther </h1>
+    <div id="wrapper">
+      <nav>
+        <a href="/" class="logo iblock">
+          <img class="profile-img" src="/assets/images/lydia.png" srcset="/assets/images/lydia_2x.png 2x" width="50px" height="50px">
+          <h1> Lydia Lowther </h1>
+        </a>
+        <ul class="menu">
+          <li>
+            <a href="/portfolio"> Portfolio </a>
+          </li>
+          <li>
+            <a href="/about"> About </a>
+          </li>
+          <li>
+            <a href="/resume"> Resume </a>
+          </li>
+          <li>
+            <a href="/contact"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hero row">
+        <div class="text-wrapper">
+          <h1 class="align-c"> Hello I'm Lydia</h1>
+          <h3 class="align-c"> I am a UX Designer in the Huntsville area who writes HTML and CSS. Outside of work I enjoy cake decorating, ultimate frisbee, and the outdoors.
+          </h3>
+        </div>
       </div>
-      <ul class="menu">
-        <li>
-          <a href="/portfolio"> Portfolio </a>
-        </li>
-        <li>
-          <a href="/about"> About </a>
-        </li>
-        <li>
-          <a href="/resume"> Resume </a>
-        </li>
-        <li>
-          <a href="/contact"> Contact </a>
-        </li>
-      </ul>
-    </nav>
+      <div class="box-wrapper">
+        <h2> Projects </h2>
+        <a href="/girt" class="box girt-img">
+          <img class="" src="/assets/images/Girt_sh.png" srcset="/assets/images/Girt_sh_2x.png 2x" width="350px" height="250px">
+          <p>Get it Right Training </p>
+        </a>
 
-    <div class="hero row">
-      <div class="text-wrapper">
-        <h1 class="align-c"> Hello I'm Lydia</h1>
-        <h3 class="align-c"> I am a Ux Designer in the Huntsville area who writes HTML and CSS. Outside of work I enjoy cake decorating, ultimate frisbee, and the outdoors.
-        </h3>
+        <a href="/clinical" class="box clinical-img">
+          <img class="" src="/assets/images/Clinical Dashboard.png" srcset="/assets/images/ClinicalDashboard_2x.png 2x" width="350px" height="250px">
+          <p>Genomic Gateway</p>
+        </a>
+
+        <a href="/agent20" class="box Agent20-img">
+          <img src="/assets/images/Agent20_trips.png" width="350px" height="250px">
+          <p>Agent20</p>
+        </a>
       </div>
-    </div>
-    <div class="box-wrapper">
-      <h2> Projects </h2>
-      <a href="/girt" class="box girt">
-        <img class="" src="/assets/images/Girt_sh.png" srcset="/assets/images/Girt_sh_2x.png 2x" width="350px" height="250px">
-        <p>Get it Right Training </p>
-      </a>
-
-      <a href="/clinical" class="box clinical">
-        <img class="" src="/assets/images/Clinical Dashboard.png" srcset="/assets/images/ClinicalDashboard_2x.png 2x" width="350px" height="250px">
-        <p>Smith Family Clinic for Genomic Medicine </p>
-      </a>
-
-      <a href="/agent20" class="box Agent20">
-        <img src="/assets/images/Agent20_trips.png" width="350px" height="250px">
-        <p>Agent20</p>
-      </a>
+      <footer>
+        <ul class="align-r">
+          <li class="iblock">Email: <a href="mailto:lydialowther@icloud.com">lydialowther@icloud.com</a></li>
+          <!-- <li class="iblock"> Phone: <a href="tel:1-256-585-0097"> 1-256-585-0097</a></li>
+          </li> -->
+        </ul>
+      </footer>
     </div>
   </body>
 </html>

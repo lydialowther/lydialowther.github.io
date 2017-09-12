@@ -1,9 +1,18 @@
 body {
   background-color: #D8D8D8;
+  height: 100%;
   margin: 0;
+  padding: 0;
   font-family: 'Droid Sans', arial, serif;
   line-height: 32px;
   font-size: 18px; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
+
+.content {
+  padding-bottom: 50px; }
 
 nav {
   background-color: white;
@@ -25,27 +34,42 @@ nav {
       border-radius: 50%;
       width: 50px;
       height: 50px; }
+  nav a {
+    text-decoration: none;
+    color: #272838;
+    cursor: pointer; }
+    nav a:hover {
+      color: black; }
   nav ul.menu {
     list-style: none;
     position: absolute;
     right: 15px;
-    top: 15px; }
+    top: 5px; }
     nav ul.menu li {
       display: inline;
       list-style: none;
       margin-right: 20px; }
-    nav ul.menu a {
-      text-decoration: none;
-      color: #272838;
-      cursor: pointer; }
-      nav ul.menu a:hover {
-        color: black; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #404040;
+  color: #F9F8F8;
+  line-height: 50px; }
+  footer ul {
+    margin: 0; }
+  footer a {
+    color: #F9F8F8;
+    margin-right: 15px; }
 
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif; }
 
-p {
-  color: #404040; }
+h1 {
+  line-height: 50px; }
 
 .iblock {
   display: inline-block; }
@@ -53,20 +77,42 @@ p {
 .align-c {
   text-align: center; }
 
+.align-r {
+  text-align: right; }
+
 .float-r {
   float: right; }
 
 .float-l {
   float: left; }
 
+.margin-t {
+  margin-top: 100px; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */ }
+
 .row {
-  width: 100%; }
-  .row .text-wrapper {
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto; }
-  .row .half {
-    width: 50%; }
+  width: 100%;
+  padding: 25px 75px 25 100px;
+  box-sizing: border-box; }
+  .row .description, .row .images {
+    width: 45%;
+    height: 100%; }
+
+.text-wrapper {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
 
 /************ Home Page ************/
 .hero {
@@ -82,14 +128,14 @@ p {
 
 .box-wrapper {
   text-align: center;
-  padding: 50px 0 100px 0; }
+  padding: 50px 0 150px 0; }
   .box-wrapper h2 {
     margin-bottom: 50px; }
   .box-wrapper .box {
     display: inline-block;
     box-sizing: border-box;
-    height: 250px;
-    width: 350px;
+    height: 253px;
+    width: 354px;
     background-color: #F9F8F8;
     margin-right: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -97,8 +143,11 @@ p {
     vertical-align: top; }
     .box-wrapper .box:last-child {
       margin-right: 0; }
+    .box-wrapper .box:hover {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
   .box-wrapper a {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: hand; }
     .box-wrapper a p {
       color: #272838; }
       .box-wrapper a p:hover {
@@ -111,17 +160,16 @@ p {
     padding-bottom: 100px;
     padding: 100px;
     color: #F9F8F8; }
-  .clinical .row {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .clinical .intro p {
+      color: #F9F8F8; }
   .clinical .description {
-    box-sizing: border-box;
-    padding: 25px 75px 25 100px; }
+    box-sizing: border-box; }
     .clinical .description li {
       margin-bottom: 15px; }
   .clinical .images img.clinical-laptop {
     position: relative;
-    top: 75px; }
+    top: 100px; }
   .clinical .images img.clinical-mobile {
     position: relative;
     left: 400px;
-    bottom: 50px; }
+    bottom: 25px; }
