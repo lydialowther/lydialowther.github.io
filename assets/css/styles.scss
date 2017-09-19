@@ -1,6 +1,326 @@
 ---
 ---
 
+$color-font: #272838;
+$color-gray-font: #404040;
+$color-blue: #7FB7BE;
+$color-light-gray: #D8D8D8;
+$color-white: #F9F8F8;
+$color-purple: #7E7F9A;
+
+$box-shaddow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 body {
-  background-color: pink;
+  background-color: $color-light-gray;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Sans', arial, serif;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 50px;
+}
+
+
+nav {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  right: 0;
+  left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 15px;
+
+    > h1 {
+      margin: 0 0 0 15px;
+      float: right;
+      line-height: 50px;
+      font-size: 2em;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: $color-font;
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }
+
+  ul.menu {
+    list-style: none;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+
+    li {
+      display: inline;
+      list-style: none;
+      margin-right: 20px;
+    }
+  }
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: $color-gray-font;
+  color: $color-white;
+  line-height: 50px;
+  box-shadow: $box-shaddow;
+
+  ul {
+    margin: 0;
+  }
+
+  a{
+    color: $color-white;
+    margin-right: 15px;
+  }
+}
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 50px;
+}
+
+
+// p {
+//   color: $color-gray-font;
+// }
+
+.iblock {
+  display: inline-block;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.align-r {
+  text-align: right;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: left;
+}
+
+.margin-t {
+  margin-top: 100px;
+}
+
+.padding-t {
+  padding-top: 100px !important;
+}
+
+.margin-r {
+  margin-right: 15px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+.row {
+  width: 100%;
+  padding: 25px 75px 25 100px;
+  box-sizing: border-box;
+
+  .description, .images {
+    width: 50%;
+  }
+}
+
+.text-wrapper {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro {
+  color: $color-white;
+  padding: 100px 200px;
+
+  p {
+    color: $color-white;
+  }
+}
+
+
+/************ Home Page ************/
+
+.hero {
+  background-color: $color-blue;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 150px;
+
+  h3 {
+    font-weight: lighter;
+    color: $color-gray-font;
+  }
+}
+
+.box-wrapper {
+  text-align: center;
+  padding: 50px 0 150px 0;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .box {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 253px;
+    width: 354px;
+    background-color: $color-white;
+    margin-right: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid $color-purple;
+    vertical-align: top;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  a{
+    text-decoration: none;
+    cursor: hand;
+    p{
+      color: $color-font;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/************ Get it Right Training ************/
+.girt {
+  .intro {
+    background-color: $color-gray-font;
+  }
+  .homepage {
+    background-color: $color-light-gray;
+    padding: 50px 0;
+
+    .girt-sh {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+      border-radius: 3px;
+    }
+  }
+  .text-block{
+    background-color: #00A100;
+    color: $color-white;
+  }
+
+  img.girt-products-laptop {
+    // position: relative;
+    // top: 140px;
+    // left: -10px;
+  }
+
+  img.girt-products {
+    margin-left: 50px;
+    margin-top: 36px;
+  }
+}
+
+/************ Clinical ************/
+
+.clinical {
+
+  .intro {
+    background-color: $color-purple;
+  }
+
+  .description {
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  .images {
+    img.clinical-laptop {
+      position: relative;
+      top: 100px;
+    }
+
+    img.clinical-mobile {
+      position: relative;
+      left: 400px;
+      bottom: 25px;
+    }
+  }
+}
+
+
+/************ Agent20 ************/
+
+.agent20 {
+
+  .intro {
+    background-color: $color-blue;
+    color: $color-gray-font;
+    p {
+      color: $color-gray-font;
+    }
+  }
+
+  .agent20-sh {
+    box-shadow: $box-shaddow;
+  }
+
+  .description {
+    background-color: $color-gray-font;
+    color: $color-white;
+  }
+
+
 }

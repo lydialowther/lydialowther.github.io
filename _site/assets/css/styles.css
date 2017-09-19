@@ -1,2 +1,207 @@
 body {
-  background-color: pink; }
+  background-color: #D8D8D8;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Sans', arial, serif;
+  line-height: 32px;
+  font-size: 18px; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
+
+.content {
+  padding-bottom: 50px; }
+
+nav {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  right: 0;
+  left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  nav .logo {
+    position: absolute;
+    left: 50px;
+    top: 15px; }
+    nav .logo > h1 {
+      margin: 0 0 0 15px;
+      float: right;
+      line-height: 50px;
+      font-size: 2em; }
+    nav .logo .profile-img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px; }
+  nav a {
+    text-decoration: none;
+    color: #272838;
+    cursor: pointer; }
+    nav a:hover {
+      color: black; }
+  nav ul.menu {
+    list-style: none;
+    position: absolute;
+    right: 15px;
+    top: 5px; }
+    nav ul.menu li {
+      display: inline;
+      list-style: none;
+      margin-right: 20px; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #404040;
+  color: #F9F8F8;
+  line-height: 50px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
+  footer ul {
+    margin: 0; }
+  footer a {
+    color: #F9F8F8;
+    margin-right: 15px; }
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  font-size: 3em;
+  line-height: 50px; }
+
+.iblock {
+  display: inline-block; }
+
+.align-c {
+  text-align: center; }
+
+.align-r {
+  text-align: right; }
+
+.float-r {
+  float: right; }
+
+.float-l {
+  float: left; }
+
+.margin-t {
+  margin-top: 100px; }
+
+.padding-t {
+  padding-top: 100px !important; }
+
+.margin-r {
+  margin-right: 15px; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */ }
+
+.row {
+  width: 100%;
+  padding: 25px 75px 25 100px;
+  box-sizing: border-box; }
+  .row .description, .row .images {
+    width: 50%; }
+
+.text-wrapper {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.intro {
+  color: #F9F8F8;
+  padding: 100px 200px; }
+  .intro p {
+    color: #F9F8F8; }
+
+/************ Home Page ************/
+.hero {
+  background-color: #7FB7BE;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 150px; }
+  .hero h3 {
+    font-weight: lighter;
+    color: #404040; }
+
+.box-wrapper {
+  text-align: center;
+  padding: 50px 0 150px 0; }
+  .box-wrapper h2 {
+    margin-bottom: 50px; }
+  .box-wrapper .box {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 253px;
+    width: 354px;
+    background-color: #F9F8F8;
+    margin-right: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #7E7F9A;
+    vertical-align: top; }
+    .box-wrapper .box:last-child {
+      margin-right: 0; }
+    .box-wrapper .box:hover {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
+  .box-wrapper a {
+    text-decoration: none;
+    cursor: hand; }
+    .box-wrapper a p {
+      color: #272838; }
+      .box-wrapper a p:hover {
+        font-weight: bold; }
+
+/************ Get it Right Training ************/
+.girt .intro {
+  background-color: #404040; }
+.girt .homepage {
+  background-color: #D8D8D8;
+  padding: 50px 0; }
+  .girt .homepage .girt-sh {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 3px; }
+.girt .text-block {
+  background-color: #00A100;
+  color: #F9F8F8; }
+.girt img.girt-products {
+  margin-left: 50px;
+  margin-top: 36px; }
+
+/************ Clinical ************/
+.clinical .intro {
+  background-color: #7E7F9A; }
+.clinical .description li {
+  margin-bottom: 15px; }
+.clinical .images img.clinical-laptop {
+  position: relative;
+  top: 100px; }
+.clinical .images img.clinical-mobile {
+  position: relative;
+  left: 400px;
+  bottom: 25px; }
+
+/************ Agent20 ************/
+.agent20 .intro {
+  background-color: #7FB7BE;
+  color: #404040; }
+  .agent20 .intro p {
+    color: #404040; }
+.agent20 .agent20-sh {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
+.agent20 .description {
+  background-color: #404040;
+  color: #F9F8F8; }
