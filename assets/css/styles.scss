@@ -103,6 +103,7 @@ footer {
 }
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
+  color: $color-gray-font;
 }
 
 h1 {
@@ -147,6 +148,10 @@ h1 {
   margin-right: 15px;
 }
 
+.margin-l {
+  margin-left: 15px;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -179,7 +184,7 @@ h1 {
 
 .intro {
   color: $color-white;
-  padding: 100px 200px;
+  padding: 10% 20%;
 
   p {
     color: $color-white;
@@ -245,6 +250,9 @@ h1 {
 .girt {
   .intro {
     background-color: $color-gray-font;
+    >h1 {
+      color: $color-white;
+    }
   }
   .homepage {
     background-color: $color-light-gray;
@@ -308,19 +316,51 @@ h1 {
   .intro {
     background-color: $color-blue;
     color: $color-gray-font;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     p {
       color: $color-gray-font;
     }
+  }
+
+  >h1 {
+    // color: $color-purple;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
   }
 
   .agent20-sh {
     box-shadow: $box-shaddow;
   }
 
+  .row {
+    img{
+      width: 95%;
+      height: auto;
+    }
+  }
+
   .description {
     background-color: $color-gray-font;
     color: $color-white;
+    >h2 {
+      color: $color-white;
+    }
   }
 
+  .text-block {
+    width: 50%;
+    padding: 0 15px 0 0;
+    box-sizing: border-box;
+  }
+}
 
+/************ About ************/
+
+.about {
+  background-color: $color-blue;
+
+  h1 {
+    margin: 0;
+    padding: 50px 0 30px 0;
+    text-align: center;
+  }
 }
