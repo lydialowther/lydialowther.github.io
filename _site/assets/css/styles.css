@@ -68,7 +68,8 @@ footer {
     margin-right: 15px; }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  color: #404040; }
 
 h1 {
   font-size: 3em;
@@ -124,7 +125,7 @@ h1 {
 
 .intro {
   color: #F9F8F8;
-  padding: 100px 200px; }
+  padding: 10% 20%; }
   .intro p {
     color: #F9F8F8; }
 
@@ -168,6 +169,8 @@ h1 {
 /************ Get it Right Training ************/
 .girt .intro {
   background-color: #404040; }
+  .girt .intro > h1 {
+    color: #F9F8F8; }
 .girt .homepage {
   background-color: #D8D8D8;
   padding: 50px 0; }
@@ -197,11 +200,23 @@ h1 {
 /************ Agent20 ************/
 .agent20 .intro {
   background-color: #7FB7BE;
-  color: #404040; }
+  color: #404040;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .agent20 .intro p {
     color: #404040; }
+.agent20 > h1 {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
 .agent20 .agent20-sh {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
+.agent20 .row img {
+  width: 100%;
+  height: auto; }
 .agent20 .description {
   background-color: #404040;
   color: #F9F8F8; }
+  .agent20 .description > h2 {
+    color: #F9F8F8; }
+.agent20 .text-block {
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box; }

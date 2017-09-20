@@ -103,6 +103,7 @@ footer {
 }
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
+  color: $color-gray-font;
 }
 
 h1 {
@@ -179,7 +180,7 @@ h1 {
 
 .intro {
   color: $color-white;
-  padding: 100px 200px;
+  padding: 10% 20%;
 
   p {
     color: $color-white;
@@ -245,6 +246,9 @@ h1 {
 .girt {
   .intro {
     background-color: $color-gray-font;
+    >h1 {
+      color: $color-white;
+    }
   }
   .homepage {
     background-color: $color-light-gray;
@@ -308,19 +312,39 @@ h1 {
   .intro {
     background-color: $color-blue;
     color: $color-gray-font;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     p {
       color: $color-gray-font;
     }
+  }
+
+  >h1 {
+    // color: $color-purple;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
   }
 
   .agent20-sh {
     box-shadow: $box-shaddow;
   }
 
+  .row {
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .description {
     background-color: $color-gray-font;
     color: $color-white;
+    >h2 {
+      color: $color-white;
+    }
   }
 
-
+  .text-block {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
 }
