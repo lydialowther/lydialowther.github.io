@@ -99,6 +99,9 @@ h1 {
 .margin-r {
   margin-right: 15px; }
 
+.margin-l {
+  margin-left: 15px; }
+
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -209,7 +212,7 @@ h1 {
 .agent20 .agent20-sh {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
 .agent20 .row img {
-  width: 100%;
+  width: 95%;
   height: auto; }
 .agent20 .description {
   background-color: #404040;
@@ -218,5 +221,13 @@ h1 {
     color: #F9F8F8; }
 .agent20 .text-block {
   width: 50%;
-  padding: 0 15px;
+  padding: 0 15px 0 0;
   box-sizing: border-box; }
+
+/************ About ************/
+.about {
+  background-color: #7FB7BE; }
+  .about h1 {
+    margin: 0;
+    padding: 50px 0 30px 0;
+    text-align: center; }
